@@ -17,6 +17,7 @@ export const Wrapper = styled.div<{ color?: string, isBlack: boolean}>`
   
   &.fixed {
     background-color: ${({ theme, color }) => color ? color: theme.colors.black};
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 `;
 
@@ -200,7 +201,7 @@ export const MobileLink = styled.div<{isActive?: boolean }>`
 
 export const Circle1 = styled.div`
   position: absolute;
-  top: 6rem;
+  top: 13rem;
   right: -2.75rem;
   width: 6.25rem;
   height: 6.25rem;
@@ -215,7 +216,7 @@ export const Circle1 = styled.div`
 
 export const Circle2 = styled.div`
   position: absolute;
-  top: 16.438rem;
+  top: 0rem;
   left: -8rem;
   width: 10.625rem;
   height: 10.625rem;
@@ -237,6 +238,21 @@ export const Circle3 = styled.div`
   border-radius: 50%;
   background: radial-gradient(50% 50% at 50% 50%, rgba(100, 255, 227, 0.80) 0%, rgba(100, 255, 227, 0.80) 100%);
   filter: blur(5.688rem);
+  z-index: 1;
+  // This code is to fix issues with the gradient in IOS
+  transform: translateZ(0);
+  backface-visibility: hidden;
+`;
+
+export const Circle4 = styled.div`
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(129, 108, 255, 0.60) 0%, rgba(129, 108, 255, 0.60) 100%);
+  filter: blur(4.688rem);
   z-index: 1;
   // This code is to fix issues with the gradient in IOS
   transform: translateZ(0);

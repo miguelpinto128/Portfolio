@@ -15,7 +15,7 @@ export const BasicStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   * {
@@ -35,6 +35,8 @@ export const BasicStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden !important;
+
   }
 
   p, ol, ul, dl {
@@ -100,11 +102,11 @@ export const MainContainer = styled.div`
   width: 100%;
   max-width: 92.5rem;
   padding: 0 3.125rem;
-  margin: auto;
 
   @media ${breakpoints.md} {
     padding: 0 1.563rem;
   }
+
 `;
 
 export const MainContainerFullWidth = styled.div`

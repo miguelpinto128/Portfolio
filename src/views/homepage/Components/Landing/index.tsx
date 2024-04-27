@@ -12,6 +12,7 @@ import Typography from "../../../../components/typography";
 import { colors } from "../../../../styles/colors";
 import { isMobile } from "react-device-detect";
 import gsap from "gsap";
+import { Fade } from "react-awesome-reveal";
 
 const Landing = () => {
   const [inside, _setInside] = useState(false);
@@ -83,35 +84,47 @@ const Landing = () => {
       />
       <MainContainer>
         <NameWrapper>
-          <Typography
-            fSize={0.938}
-            fWeight={500}
-            color="grey"
-            letterSpaccing={0.25}
-            mb={1.25}
-          >
-            WELCOME TO MY WORLD
-          </Typography>
-          <Typography
-            fSize={{ md: 4.688, xxs: 2 }}
-            fWeight={900}
-            color={colors.white}
-          >
-            Hi, I’m Miguel Pinto.
-          </Typography>
-          <Typography
-            fSize={{ md: 4.688, xxs: 2 }}
-            fWeight={900}
-            color={colors.pinkRed}
-          >
-            <Typewriter
-              options={{
-                strings: ["Web developer", "Mobile developer"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </Typography>
+          <Fade direction="down">
+            <Typography
+              fSize={0.938}
+              fWeight={500}
+              color="grey"
+              letterSpaccing={0.25}
+              mb={1.25}
+            >
+              WELCOME TO MY WORLD
+            </Typography>
+          </Fade>
+          <Fade direction="up">
+            <Typography
+              fSize={{ md: 4.688, xxs: 2 }}
+              fWeight={900}
+              color={colors.white}
+            >
+              Hi, I’m Miguel Pinto.
+            </Typography>
+            <Typography
+              fSize={{ md: 4.688, xxs: 2 }}
+              fWeight={900}
+              color={colors.pinkRed}
+            >
+              <Typewriter
+                options={{
+                  strings: [
+                    "Web Developer",
+                    "Mobile Developer",
+                    "Software Developer",
+                    "JS Developer",
+                    "TS Developer",
+                    "Gamer",
+                    "Tech Enthusiast",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </Typography>
+          </Fade>
         </NameWrapper>
       </MainContainer>
     </LandingPageWrapper>

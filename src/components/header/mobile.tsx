@@ -50,9 +50,7 @@ export const Mobile: FC<Props> = ({
         color={colors.white}
         aria-label="Toggle navigation"
       />
-      <Circle1 />
       <Circle2 />
-      <Circle3 />
       <MobileWrapper open={mobileMenu} screenHeight={screenHeight}>
         <Block w="100%" position="relative">
           <Circle1 />

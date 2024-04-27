@@ -4,6 +4,7 @@ import {
   Circle1,
   Circle2,
   Circle3,
+  Circle4,
   ImageWrapper,
   LinkComponent,
 } from "./styles";
@@ -35,9 +36,7 @@ export const Desktop: FC<Props> = () => {
         fJustify="flex-end"
         display={{ md: "flex", xxs: "none" }}
       >
-        {/* <Circle1 />
         <Circle2 />
-        <Circle3 /> */}
         {items.map((elem, index: number) => (
           <LinkComponent
             key={index}

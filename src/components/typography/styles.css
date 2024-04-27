@@ -1,0 +1,54 @@
+.typography-header-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.typography-header-language {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  font-weight: 350;
+}
+
+.typography-dropdown-menu {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.typography-mobile-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  font-weight: 600;
+}
+
+.typography-mobile-language {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 350;
+}
+
+.typography-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.typography-footer-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.188rem;
+  line-height: 1.438rem;
+  font-weight: 700;
+}
+
+.typography-footer_link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}

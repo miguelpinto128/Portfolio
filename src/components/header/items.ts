@@ -1,1 +1,1 @@
-export const items = ['Home', 'About me', 'Skills', 'Experience', 'Education and Certifications', 'Projects'];
+export const items = ['Home', 'About me', 'Skills','Education', 'Work Experience'];

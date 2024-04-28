@@ -14,7 +14,7 @@ import Head from "next/head";
 import NProgress from "nprogress";
 import Theme from "../styles/theme";
 import Header from "../components/header";
-// import Footer from "../components/footer";
+import Footer from "../components/footer";
 import type { AppProps } from "next/app";
 import Context from "../context/context";
 
@@ -40,7 +40,7 @@ const InnerApp = (props: InnerAppProps) => {
       <Header />
       <ViewContainer>
         <Component {...pageProps} />
-        {/* <Footer data={appProps?.footerInfo} /> */}
+        <Footer />
       </ViewContainer>
     </AppContainer>
   );

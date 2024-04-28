@@ -1,17 +1,11 @@
 import { FC, useContext } from "react";
 import { Box, Image } from "../../styles/basicStyles";
-import {
-  Circle1,
-  Circle2,
-  Circle3,
-  Circle4,
-  ImageWrapper,
-  LinkComponent,
-} from "./styles";
+import { Circle2, ImageWrapper, LinkComponent } from "./styles";
 import { items } from "./items";
 import { colors } from "../../styles/colors";
 import Typography from "../typography";
 import PageContext from "../../context/page/pageContext";
+import { scroller } from "react-scroll";
 
 interface Props {
   toggleLanguage: (value: string) => void;
@@ -28,7 +22,10 @@ export const Desktop: FC<Props> = () => {
           alt="logo"
           maxW={3.75}
           cursor="pointer"
-          onClick={() => setPage("Home")}
+          onClick={() => {
+            setPage("Home");
+            scroller.scrollTo("Home", { offset: 0 });
+          }}
         />
       </ImageWrapper>
       <Box
@@ -44,7 +41,10 @@ export const Desktop: FC<Props> = () => {
             hoverColor={colors.pinkRed}
             hoverDotColor={colors.pinkRed}
             isActive={elem === page}
-            onClick={() => setPage(elem)}
+            onClick={() => {
+              setPage(elem);
+              scroller.scrollTo(elem, { offset: 0 });
+            }}
           >
             <Typography
               fWeight={500}

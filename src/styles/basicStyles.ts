@@ -102,11 +102,16 @@ export const MainContainer = styled.div`
   width: 100%;
   max-width: 92.5rem;
   padding: 0 3.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media ${breakpoints.md} {
     padding: 0 1.563rem;
   }
 
+  ${generateProps};
 `;
 
 export const MainContainerFullWidth = styled.div`
@@ -133,6 +138,16 @@ export const MainContainerBlog = styled.div`
 `;
 
 export const Box = styled.div<any>`
+  display: flex;
+  flex-direction: ${({ fDirection }) => fDirection ? fDirection : 'row'};
+  justify-content: ${({ fJustify }) => fJustify ? fJustify : 'flex-start'};
+  align-items: ${({ fAlign }) => fAlign ? fAlign : 'flex-start'};
+  width: 100%;
+  
+  ${generateProps};
+`;
+
+export const Link = styled.a<any>`
   display: flex;
   flex-direction: ${({ fDirection }) => fDirection ? fDirection : 'row'};
   justify-content: ${({ fJustify }) => fJustify ? fJustify : 'flex-start'};

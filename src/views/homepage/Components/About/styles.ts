@@ -1,7 +1,6 @@
 
 import styled, { css } from 'styled-components';
-import { Box, Image, transitionsDelay } from '../../../../styles/basicStyles';
-import { breakpoints } from '../../../../styles/breakpoints';
+import { Box, Image, Link, transitionsDelay } from '../../../../styles/basicStyles';
 
 export const AboutPageWrapper = styled(Box)`
   min-height: 100vh;
@@ -16,6 +15,7 @@ export const ContentWrapper = styled(Box)`
 export const ImageContainer = styled(Box)`
   max-height: 40rem;
   max-width: 30rem;
+  flex-direction: column;
 `;
 
 export const ImageWrapper = styled(Image)`
@@ -92,17 +92,21 @@ export const AboutContainer = styled(Box)`
 `;
 
 export const Tabs = styled(Box)`
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
 `;
 
-export const Tab = styled(Box)`
-width: auto;
+export const Tab = styled(Box)<{isActive?: boolean}>`
+  width: auto;
   position: relative;
   cursor: pointer;
-  padding: 0 1.563rem;
   position: relative;
   top: 0;
   transition: top ease 0.5s;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
 
   & span {
     color: ${({ textColor, theme }) => textColor ? textColor: theme.colors.white};
@@ -114,10 +118,10 @@ width: auto;
     position: absolute;
     bottom: -0.5rem;
     height: 0.25rem;
-    width: 20%;
+    width: 1rem;
     margin-top: 0.25rem;
     transition: width ${transitionsDelay} linear;
-    background-color: ${({ theme }) => theme.colors.pinkRed};
+    background-color: ${({ theme }) => theme.colors.gunSmoke};
     border-radius: 0.1rem;
   }
 
@@ -138,10 +142,45 @@ width: auto;
       & span {
         color: ${isActive ? theme.colors.pinkRed :  theme.colors.white};
       }
+      
+      &:after {
+        transition: background-color ${transitionsDelay} linear;
+        background-color: ${({ theme }) => theme.colors.pinkRed};
+        width: 100%;
+      }
     `
   }
+`;
 
-  @media ${breakpoints.lg} {
-    padding: 0 0.75rem;
+export const EmailText = styled.a`
+  color: ${({ theme }) => theme.colors.gunSmoke};
+  transition: color ${transitionsDelay} linear;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.pinkRed} !important;
+  }
+`;
+
+export const SocialWrapper = styled(Link)`
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 2px solid rgba(198, 201, 216, .75);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  transition: all ${transitionsDelay} linear;
+
+  &:hover {
+    cursor: pointer;
+    top: -5px;
+    background-color: ${({ theme }) => theme.colors.pinkRed} !important;
+    border-color: ${({ theme }) => theme.colors.pinkRed} !important;
+
+    & div, svg, path {
+      fill: ${({ theme }) => theme.colors.white} !important;
+    }
   }
 `;

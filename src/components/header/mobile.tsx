@@ -1,4 +1,4 @@
-import { FC, Fragment, useContext, useEffect } from "react";
+import { FC, useContext, useEffect } from "react";
 import { Block, Box, Image } from "../../styles/basicStyles";
 import {
   MobileWrapper,
@@ -8,16 +8,13 @@ import {
   Circle2,
   Circle3,
 } from "./styles";
-import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import { items } from "./items";
-import { Languages, LanguagesProps } from "../../utils/languages";
 import { colors } from "../../styles/colors";
 import Typography from "../typography";
-import Icon from "../Icon";
 import PageContext from "../../context/page/pageContext";
 import { useDisclosure } from "@mantine/hooks";
 import { Burger } from "@mantine/core";
+import { scroller } from "react-scroll";
 
 interface Props {
   toggleLanguage: (value: string) => void;
@@ -68,7 +65,7 @@ export const Mobile: FC<Props> = ({
                 alt="logo"
                 maxW={3.75}
                 cursor="pointer"
-                onClick={() => setPage("Home")}
+                onClick={() => scroller.scrollTo("About me", { offset: 0 })}
               />
               <Burger
                 opened={opened}
@@ -89,7 +86,12 @@ export const Mobile: FC<Props> = ({
                   <MobileLink
                     key={index}
                     isActive={elem === page}
-                    onClick={() => setPage(elem)}
+                    onClick={() => {
+                      setPage(elem);
+                      scroller.scrollTo(elem, { offset: 0 });
+                      toggleMenu();
+                      toggle();
+                    }}
                   >
                     <Typography variant="mobile-link">{elem}</Typography>
                   </MobileLink>

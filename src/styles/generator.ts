@@ -53,6 +53,7 @@ export const generator = {
     { name: 'bBottomRightRadius', cssProp: 'border-bottom-right-radius', units: 'rem' },
     { name: 'wSpace', cssProp: 'white-space' },
     { name: 'letterSpaccing', cssProp: 'letter-spacing', units: 'rem' },
+    { name: 'gap', cssProp: 'gap', units: 'rem' },
   ]
 };
  

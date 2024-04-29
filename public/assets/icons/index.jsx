@@ -85,6 +85,6 @@ const icons = {
     icon: <Job />,
     type: "fill",
   },
-} as any;
+};
 
 export default icons;

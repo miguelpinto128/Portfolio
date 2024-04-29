@@ -2,7 +2,7 @@ import React from "react";
 import icons from "../../../public/assets/icons";
 import { SvgWrapper } from "./styles";
 
-const Icon = ({ icon, ...forwardProps }: any) => {
+const Icon = ({ icon, ...forwardProps }) => {
   const selectedIcon = icons[icon];
 
   if (!selectedIcon) {

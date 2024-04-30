@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FooterWrapper } from "./styles";
 import { Box, Image } from "../../styles/basicStyles";
 import { SocialWrapper } from "../../views/homepage/Components/About/styles";
@@ -7,6 +7,8 @@ import { Bounce } from "react-awesome-reveal";
 import { ImageWrapper } from "../header/styles";
 import Typography from "../typography";
 import { colors } from "../../styles/colors";
+import PageContext from "../../context/page/pageContext";
+import { scroller } from "react-scroll";
 
 interface SocialsProps {
   id: number;
@@ -38,11 +40,18 @@ const Socials: SocialsProps[] = [
 ];
 
 const Footer = () => {
+  const { page, setPage } = useContext(PageContext);
+
   return (
     <FooterWrapper>
-      <Box w="33.333%">
+      <Box w="33.333%" fAlign="center" fJustify="center" mb={{ lg: 0, xxs: 1 }}>
         <Bounce>
-          <ImageWrapper>
+          <ImageWrapper
+            onClick={() => {
+              setPage("Home");
+              scroller.scrollTo("Home", { offset: 0 });
+            }}
+          >
             <Image
               src="/assets/logo.png"
               alt="logo"
@@ -52,7 +61,13 @@ const Footer = () => {
           </ImageWrapper>
         </Bounce>
       </Box>
-      <Box fAlign="center" fJustify="center" gap={1} w="33.333%">
+      <Box
+        fAlign="center"
+        fJustify="center"
+        gap={1}
+        w="33.333%"
+        mb={{ lg: 0, xxs: 1 }}
+      >
         <Bounce>
           {Socials.map((social, index) => (
             <SocialWrapper key={index} href={social.url} target="_blank">
@@ -65,13 +80,13 @@ const Footer = () => {
           ))}
         </Bounce>
       </Box>
-      <Box w="33.333%" fJustify="flex-end">
-        <Bounce>
+      <Box w={{ lg: "33.333%", xxs: "100%" }} fJustify="center" fAlign="center">
+        <Bounce style={{ textAlign: "center" }}>
           <Typography
             fSize={1}
             fWeight={400}
             color={colors.gunSmoke}
-            tAlign="flex-end"
+            tAlign="center"
           >
             Designed and Developed by Miguel Pinto
           </Typography>

@@ -45,7 +45,6 @@ export const Mobile: FC<Props> = ({
           toggleMenu();
         }}
         color={colors.white}
-        aria-label="Toggle navigation"
       />
       <Circle2 />
       <MobileWrapper open={mobileMenu} screenHeight={screenHeight}>
@@ -53,7 +52,7 @@ export const Mobile: FC<Props> = ({
           <Circle1 />
           <Circle2 />
           <Circle3 />
-          <Block w="100%" padding="0 1.25rem">
+          <Block w="100%" padding="0 1.563rem">
             <Box
               h={5}
               fAlign="center"
@@ -64,6 +63,7 @@ export const Mobile: FC<Props> = ({
                 src="/assets/logo.png"
                 alt="logo"
                 maxW={3.75}
+                mt={-0.4}
                 cursor="pointer"
                 onClick={() => scroller.scrollTo("About me", { offset: 0 })}
               />

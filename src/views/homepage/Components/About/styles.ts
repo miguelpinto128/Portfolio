@@ -107,8 +107,10 @@ export const Tab = styled(Box)<{isActive?: boolean}>`
   color: white;
   font-size: 1.125rem;
   font-weight: 500;
+  transition: width ${transitionsDelay} linear;
 
   & span {
+    transition: width ${transitionsDelay} linear;
     color: ${({ textColor, theme }) => textColor ? textColor: theme.colors.white};
     transition: font-weight ${transitionsDelay} linear, color ${transitionsDelay} linear;
   }
@@ -126,6 +128,7 @@ export const Tab = styled(Box)<{isActive?: boolean}>`
   }
 
   &:hover {
+    transition: width ${transitionsDelay} linear;
     color: ${({ theme }) => theme.colors.grey};
 
     &:after {
@@ -140,13 +143,14 @@ export const Tab = styled(Box)<{isActive?: boolean}>`
   ${({ isActive, theme }) => isActive &&
     css`
       & span {
+        transition: width ${transitionsDelay} linear;
         color: ${isActive ? theme.colors.pinkRed :  theme.colors.white};
       }
       
       &:after {
-        transition: background-color ${transitionsDelay} linear;
-        background-color: ${({ theme }) => theme.colors.pinkRed};
         width: 100%;
+        transition: background-color ${transitionsDelay} linear, width ${transitionsDelay} linear;
+        background-color: ${({ theme }) => theme.colors.pinkRed};
       }
     `
   }

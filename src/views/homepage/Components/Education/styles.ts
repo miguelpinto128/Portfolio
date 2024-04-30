@@ -63,6 +63,7 @@ export const FinalIcon = styled(Box)`
   width: 1.25rem;
   border-radius: 50%;
   background-color: ${({ theme }) => theme.colors.pinkRed};
+  transition: all ${transitionsDelay} linear;
 
   &:hover {
     transition: all ${transitionsDelay} linear;

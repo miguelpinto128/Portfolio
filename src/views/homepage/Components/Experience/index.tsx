@@ -198,9 +198,9 @@ const Experience = () => {
                 <Box
                   fJustify="center"
                   fAlign="center"
-                  w="20%"
+                  maxW={4.375}
                   fDirection="column"
-                  mr={1}
+                  mr={0.5}
                 >
                   <Fade direction="up">
                     <Box fJustify="center" fAlign="center" fDirection="column">
@@ -226,20 +226,21 @@ const Experience = () => {
                   <Fade direction="right">
                     <Box fDirection="column">
                       <Typography
-                        fSize={1.8}
+                        fSize={1.5}
                         fWeight={400}
                         color={colors.white}
+                        mb={1}
                       >
                         Codepoint
                       </Typography>
-                      <Typography fSize={1.8} fWeight={50} color={colors.white}>
+                      <Typography fSize={1.2} fWeight={50} color={colors.white}>
                         Front End Developer
                       </Typography>
                     </Box>
                   </Fade>
                   <Fade direction="right">
                     <Box fDirection="column">
-                      <Typography fSize={1.5} fWeight={50} color={colors.white}>
+                      <Typography fSize={1.2} fWeight={50} color={colors.white}>
                         2022 - Current
                       </Typography>
                     </Box>
@@ -251,9 +252,9 @@ const Experience = () => {
                 <Box
                   fJustify="center"
                   fAlign="center"
-                  w="20%"
+                  maxW={4.375}
                   fDirection="column"
-                  mr={1}
+                  mr={0.5}
                 >
                   <Fade direction="down">
                     <Box fJustify="center" fAlign="center" fDirection="column">
@@ -276,20 +277,21 @@ const Experience = () => {
                   <Fade direction="right">
                     <Box fDirection="column">
                       <Typography
-                        fSize={1.8}
+                        fSize={1.5}
                         fWeight={400}
                         color={colors.white}
+                        mb={1}
                       >
                         School Internship
                       </Typography>
-                      <Typography fSize={1.8} fWeight={50} color={colors.white}>
+                      <Typography fSize={1.2} fWeight={50} color={colors.white}>
                         Front End Developer
                       </Typography>
                     </Box>
                   </Fade>
                   <Fade direction="right">
                     <Box fDirection="column">
-                      <Typography fSize={1.5} fWeight={50} color={colors.white}>
+                      <Typography fSize={1.2} fWeight={50} color={colors.white}>
                         2019
                       </Typography>
                     </Box>

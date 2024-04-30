@@ -233,9 +233,9 @@ const Education = () => {
                   <Box
                     fJustify="center"
                     fAlign="center"
-                    w="20%"
+                    maxW={4.375}
                     fDirection="column"
-                    mr={1}
+                    mr={0.5}
                   >
                     <Fade direction="up">
                       <Box
@@ -269,9 +269,10 @@ const Education = () => {
                     <Fade direction="right">
                       <Box fDirection="column">
                         <Typography
-                          fSize={1.8}
+                          fSize={1.5}
                           fWeight={400}
                           color={colors.white}
+                          mb={1}
                         >
                           Web Development & Multimedia
                         </Typography>
@@ -280,14 +281,14 @@ const Education = () => {
                     <Fade direction="right">
                       <Box fDirection="column">
                         <Typography
-                          fSize={1.5}
+                          fSize={1.2}
                           fWeight={50}
                           color={colors.white}
                         >
                           2020 - 2022
                         </Typography>
                         <Typography
-                          fSize={1.5}
+                          fSize={1.2}
                           fWeight={50}
                           color={colors.white}
                         >
@@ -307,9 +308,9 @@ const Education = () => {
                   <Box
                     fJustify="center"
                     fAlign="center"
-                    w="20%"
                     fDirection="column"
-                    mr={1}
+                    mr={0.5}
+                    maxW={4.375}
                   >
                     <Fade direction="down">
                       <Box
@@ -336,9 +337,10 @@ const Education = () => {
                     <Fade direction="right">
                       <Box fDirection="column">
                         <Typography
-                          fSize={1.8}
+                          fSize={1.5}
                           fWeight={400}
                           color={colors.white}
+                          mb={1}
                         >
                           Computer Systems Management & Programming Technician
                         </Typography>
@@ -347,14 +349,14 @@ const Education = () => {
                     <Fade direction="right">
                       <Box fDirection="column">
                         <Typography
-                          fSize={1.5}
+                          fSize={1.2}
                           fWeight={50}
                           color={colors.white}
                         >
                           2017 - 2019
                         </Typography>
                         <Typography
-                          fSize={1.5}
+                          fSize={1.2}
                           fWeight={50}
                           color={colors.white}
                         >

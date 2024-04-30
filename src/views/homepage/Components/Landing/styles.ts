@@ -29,8 +29,8 @@ export const BannerCircle1 = styled.div`
 
 export const BannerCircle2 = styled.div`
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 10%;
+  left: 10%;
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 50%;
@@ -44,8 +44,8 @@ export const BannerCircle2 = styled.div`
 
 export const BannerCircle3 = styled.div`
   position: absolute;
-  bottom: 10%;
-  right: 10%;
+  top: 5%;
+  right: 5%;
   width: 11.25rem;
   height: 11.25rem;
   border-radius: 50%;

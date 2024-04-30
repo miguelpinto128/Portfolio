@@ -111,7 +111,7 @@ const Landing = () => {
                   fWeight={900}
                   color={colors.white}
                 >
-                  Hi, I’m Miguel Pinto.
+                  Hi, I’m Miguel Pinto
                 </Typography>
                 <Typography
                   fSize={{ md: 4.688, xxs: 2 }}

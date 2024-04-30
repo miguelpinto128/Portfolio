@@ -64,10 +64,10 @@ export const Header: FC<Props> = ({ isBlack = false }) => {
       setTimeout(() => {
         document.body.style.overflowY = "auto";
         document.body.style.position = "initial";
-      }, 500);
+      }, 1000);
     } else {
-      document.body.style.overflowY = "scroll";
-      document.body.style.position = "fixed";
+      // document.body.style.overflowY = "scroll";
+      // document.body.style.position = "fixed";
     }
 
     setMobileMenu(!mobileMenu);

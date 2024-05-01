@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#191919" />
           <link rel="icon" href="/favicon/favicon.ico" />
-
+          <title>Miguel Pinto</title>
           <meta
             httpEquiv="Cache-Control"
             content="no-cache, no-store, must-revalidate"

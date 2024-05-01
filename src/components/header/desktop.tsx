@@ -20,7 +20,7 @@ export const Desktop: FC<Props> = () => {
         <Image
           src="/assets/logo.png"
           alt="logo"
-          maxW={3.75}
+          maxW={2}
           cursor="pointer"
           onClick={() => {
             setPage("Home");

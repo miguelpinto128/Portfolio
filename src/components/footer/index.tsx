@@ -55,7 +55,7 @@ const Footer = () => {
             <Image
               src="/assets/logo.png"
               alt="logo"
-              maxW={3.75}
+              maxW={2}
               cursor="pointer"
             />
           </ImageWrapper>

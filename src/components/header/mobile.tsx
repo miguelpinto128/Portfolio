@@ -62,7 +62,7 @@ export const Mobile: FC<Props> = ({
               <Image
                 src="/assets/logo.png"
                 alt="logo"
-                maxW={3.75}
+                maxW={2}
                 mt={-0.4}
                 cursor="pointer"
                 onClick={() => scroller.scrollTo("About me", { offset: 0 })}

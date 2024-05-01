@@ -20,7 +20,7 @@ export const BannerCircle1 = styled.div`
   width: 17.5rem;
   height: 17.5rem;
   border-radius: 50%;
-  background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(129, 108, 255, 0.80) 0%, rgba(129, 108, 255, 0.80) 100%);
+  background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(0, 0, 255, 0.8) 0%, rgba(0, 0, 255, 0.8) 100%);
   filter: blur(7.5rem);
   z-index: 1;
   // This code is to fix issues with the gradient in IOS
@@ -50,7 +50,7 @@ export const BannerCircle3 = styled.div`
   width: 11.25rem;
   height: 11.25rem;
   border-radius: 50%;
-  background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(129, 108, 255, 0.50) 0%, rgba(129, 108, 255, 0.50) 100%);
+  background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(0, 0, 255, 0.8) 0%, rgba(0, 0, 255, 0.8) 100%);
   filter: blur(5rem);
   z-index: 3;
   // This code is to fix issues with the gradient in IOS

@@ -87,6 +87,27 @@ export const BasicStyles = createGlobalStyle`
   #hubspot-messages-iframe-container {
     z-index: 9999 !important;
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: ${({ theme }) => theme.colors.rangoonGreen}; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 `;
 
 export const AppContainer = styled.div`

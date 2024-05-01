@@ -1,5 +1,5 @@
 export const RangoonGreen = '#191919';
-export const PinkRed = '#1F51FF';
+export const PinkRed = '#0000FF';
 export const White = '#FFFF';
 export const PinkRose = '#E89BB4';
 export const Black = '#101010';

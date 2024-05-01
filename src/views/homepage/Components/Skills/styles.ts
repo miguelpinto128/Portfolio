@@ -34,7 +34,7 @@ export const Circle2 = styled.div`
   width: 15.625rem;
   height: 15.625rem;
   border-radius: 50%;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(129, 108, 255, 0.60) 0%, rgba(129, 108, 255, 0.60) 100%);
+  background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(0, 0, 255, 0.8) 0%, rgba(0, 0, 255, 0.8) 100%);
   filter: blur(4.688rem);
   z-index: 1;
   // This code is to fix issues with the gradient in IOS

@@ -195,7 +195,7 @@ const About = () => {
                         March 16, 2001
                       </Typography>
                     </Box>
-                    <Box mb={0.5}>
+                    {/* <Box mb={0.5}>
                       <Typography
                         fSize={0.938}
                         fWeight={500}
@@ -216,7 +216,7 @@ const About = () => {
                           </EmailText>
                         </Typography>
                       </Typography>
-                    </Box>
+                    </Box> */}
                     <Box mb={0.5}>
                       <Typography
                         fSize={0.938}
@@ -237,7 +237,7 @@ const About = () => {
                         </Typography>
                       </Typography>
                     </Box>
-                    <Box mb={0.5}>
+                    {/* <Box mb={0.5}>
                       <Typography
                         fSize={0.938}
                         fWeight={500}
@@ -258,7 +258,7 @@ const About = () => {
                           </EmailText>
                         </Typography>
                       </Typography>
-                    </Box>
+                    </Box> */}
                     <Box mb={0.5}>
                       <Typography
                         fSize={0.938}

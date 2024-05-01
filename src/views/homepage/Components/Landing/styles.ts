@@ -10,6 +10,7 @@ export const LandingPageWrapper = styled(Box)`
 
 export const NameWrapper = styled(Box)`
  flex-direction: column;
+ z-index: 99;
 `;
 
 export const BannerCircle1 = styled.div`

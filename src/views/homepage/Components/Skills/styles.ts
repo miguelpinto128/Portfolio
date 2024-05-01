@@ -110,7 +110,7 @@ export const SkillWrapper = styled(Box)`
   justify-content: center;
 
   @media ${breakpoints.sm} {
-    background: linear-gradient(90deg, rgba(246,27,16,1) 0%, rgba(239,9,99,1) 80%);
+    background: linear-gradient(180deg, rgba(31,81,255,1) 17%, rgba(7,17,140,1) 80%);
     & div, svg, path {
       transition: fill ${transitionsDelay} linear;
       fill: ${({ theme }) => theme.colors.white} !important;
@@ -135,7 +135,7 @@ export const SkillWrapper = styled(Box)`
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(246,27,16,1) 0%, rgba(239,9,99,1) 80%);
+    background: linear-gradient(180deg, rgba(31,81,255,1) 17%, rgba(7,17,140,1) 80%);
     z-index: -1;
     transition: opacity ${transitionsDelay} linear;
     opacity: 0;

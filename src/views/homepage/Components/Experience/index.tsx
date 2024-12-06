@@ -78,6 +78,66 @@ const Experience = () => {
                       fWeight={300}
                       color={colors.white}
                     >
+                      ItSector
+                    </Typography>
+                    <Typography
+                      fSize={{ md: 2, xxs: 2 }}
+                      fWeight={50}
+                      color={colors.white}
+                    >
+                      Front End Developer
+                    </Typography>
+                  </Fade>
+                </Box>
+                <Box
+                  fJustify="center"
+                  fAlign="center"
+                  w="10%"
+                  h="100%"
+                  fDirection="column"
+                >
+                  <Fade direction="up">
+                    <Box fJustify="center" fAlign="center" fDirection="column">
+                      <Line />
+                      <SecondaryIconWrapper>
+                        <SecondaryIconDot />
+                      </SecondaryIconWrapper>
+                      <Line />
+                    </Box>
+                  </Fade>
+                </Box>
+                <Box
+                  fJustify="center"
+                  fAlign="flex-start"
+                  w="40%"
+                  fDirection="column"
+                >
+                  <Fade direction="right">
+                    <Box fDirection="column">
+                      <Typography
+                        fSize={{ md: 2, xxs: 2 }}
+                        fWeight={50}
+                        color={colors.white}
+                      >
+                        2024 - Current
+                      </Typography>
+                    </Box>
+                  </Fade>
+                </Box>
+              </Box>
+              <Box fDirection="row" fJustify="center" fAlign="center" h="100%">
+                <Box
+                  fJustify="center"
+                  fAlign="flex-end"
+                  w="40%"
+                  fDirection="column"
+                >
+                  <Fade direction="left">
+                    <Typography
+                      fSize={{ md: 2, xxs: 2 }}
+                      fWeight={300}
+                      color={colors.white}
+                    >
                       Codepoint
                     </Typography>
                     <Typography
@@ -119,7 +179,7 @@ const Experience = () => {
                         fWeight={50}
                         color={colors.white}
                       >
-                        2022 - Current
+                        2022 - 2024
                       </Typography>
                     </Box>
                   </Fade>
@@ -231,6 +291,57 @@ const Experience = () => {
                         color={colors.white}
                         mb={1}
                       >
+                        ItSector
+                      </Typography>
+                      <Typography fSize={1.2} fWeight={50} color={colors.white}>
+                        Front End Developer
+                      </Typography>
+                    </Box>
+                  </Fade>
+                  <Fade direction="right">
+                    <Box fDirection="column">
+                      <Typography fSize={1.2} fWeight={50} color={colors.white}>
+                        2024 - Current
+                      </Typography>
+                    </Box>
+                  </Fade>
+                </Box>
+              </Box>
+              <Box fDirection="row" fJustify="center" fAlign="center" h="100%">
+                {/* 1 */}
+                <Box
+                  fJustify="center"
+                  fAlign="center"
+                  maxW={4.375}
+                  fDirection="column"
+                  mr={0.5}
+                >
+                  <Fade direction="up">
+                    <Box fJustify="center" fAlign="center" fDirection="column">
+                      <Line />
+                      <SecondaryIconWrapper>
+                        <SecondaryIconDot />
+                      </SecondaryIconWrapper>
+                      <Line />
+                    </Box>
+                  </Fade>
+                </Box>
+                {/* 2 */}
+                <Box
+                  w="80%"
+                  fJustify="center"
+                  fAlign="flex-start"
+                  fDirection="column"
+                  mt={2.5}
+                >
+                  <Fade direction="right">
+                    <Box fDirection="column">
+                      <Typography
+                        fSize={1.5}
+                        fWeight={400}
+                        color={colors.white}
+                        mb={1}
+                      >
                         Codepoint
                       </Typography>
                       <Typography fSize={1.2} fWeight={50} color={colors.white}>
@@ -241,7 +352,7 @@ const Experience = () => {
                   <Fade direction="right">
                     <Box fDirection="column">
                       <Typography fSize={1.2} fWeight={50} color={colors.white}>
-                        2022 - Current
+                        2022 - 2024
                       </Typography>
                     </Box>
                   </Fade>
